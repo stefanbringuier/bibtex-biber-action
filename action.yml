@@ -1,0 +1,16 @@
+name: 'Latex Biber Action'
+author: 'julianahrens'
+description: 'texlive-full including biber for complinig latex'
+inputs:
+  filename:
+    description: 'Filename of .tex file'
+    required: true
+    default: 'main'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.filename }}
+branding:
+  icon: 'file-text'
+  color: 'blue'
