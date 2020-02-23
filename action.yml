@@ -6,6 +6,10 @@ inputs:
     description: 'Filename of .tex file'
     required: true
     default: 'main'
+  output-directory:
+    description: 'Define build directory'
+    required: true
+    default: 'out'
 runs:
   using: 'docker'
   image: 'Dockerfile'
