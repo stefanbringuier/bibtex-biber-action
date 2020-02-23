@@ -15,6 +15,7 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.filename }}
+    - ${{ inputs.output-directory }}
 branding:
   icon: 'file-text'
   color: 'blue'
