@@ -16,7 +16,7 @@ This action helps you to check the `.bib` file.
 
 ## Example usage
 ```yaml
-uses: actions/bibtex-biber-action@v2
+uses: actions/bibtex-biber-action@v1
 with:
   filename: 'references.bib'
   output-directory: 'processed'
