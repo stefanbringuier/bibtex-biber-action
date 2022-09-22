@@ -1,15 +1,15 @@
-name: 'Latex Biber Action'
-author: 'julianahrens'
-description: 'texlive-full including biber for complinig latex'
+name: 'Bibtex Biber Action'
+author: 'Original: julianahrens, Modified: stefanbringuier'
+description: 'texlive-full including biber for checking .bib file'
 inputs:
   filename:
-    description: 'Filename of .tex file'
+    description: 'Filename of .bib file'
     required: true
-    default: 'main'
+    default: 'references'
   output-directory:
-    description: 'Define build directory'
+    description: 'Define biber processed directory'
     required: true
-    default: 'out'
+    default: 'processed'
 runs:
   using: 'docker'
   image: 'Dockerfile'

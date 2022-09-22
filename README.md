@@ -1,6 +1,6 @@
-# Latex Biber Action
+# BibTex Validate Biber Action
 
-This action prints helps you to compile latex by using biber.
+This action helps you to check the `.bib` file.
 
 ## Inputs
 
@@ -8,14 +8,16 @@ This action prints helps you to compile latex by using biber.
 
 **Required** The name of the file to compile
 
+*Note* include `.bib` extension
+
 ### `output-directory`
 
 **Required** The name of the output dir
 
 ## Example usage
 ```yaml
-uses: actions/latex-biber-action@v2
+uses: actions/bibtex-biber-action@v2
 with:
-  filename: 'main'
-  output-directory: 'out'
+  filename: 'references.bib'
+  output-directory: 'processed'
 ```
